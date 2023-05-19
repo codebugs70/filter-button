@@ -1,0 +1,65 @@
+/* =================================================== */
+body {
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 20px;
+}
+
+.sort-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+.sort-button button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sort-button button:hover {
+  background-color: #6a5af9;
+  color: white;
+}
+.sort-button button.active {
+  background-color: #6a5af9;
+  color: white;
+}
+
+.image-box {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+.image-box img {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 2px solid #f62682;
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.image-box img.hide {
+  display: none;
+}
+.image-box img:hover {
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */
